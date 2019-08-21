@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Natulea.Views.EKTP"
+             Title="Check EKTP">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Cancel" />
+        <!--<ToolbarItem Text="Submit" Clicked="Submit_Clicked" />-->
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="15">
+            <Label Text="NIK" FontSize="Medium" />
+
+            <Entry x:Name="EntryNIK" Text="{Binding Item.NIK}" d:Text="Insert NIK" FontSize="Medium" />
+
+            <Button Text="Submit" Clicked="Submit_Clicked" />
+            <Label Text="{Binding Item.NAMA_LGKP}" d:Text="Item description" FontSize="Small"/>
+            <Label Text="{Binding Item.KAB_NAME}" d:Text="Item description" FontSize="Small"/>
+            <Label Text="{Binding Item.NO_RW}" d:Text="Item description" FontSize="Small"/>
+            <Label Text="{Binding Item.KEC_NAME}" d:Text="Item description" FontSize="Small"/>
+        </StackLayout>
+
+    </ContentPage.Content>
+
+</ContentPage>
