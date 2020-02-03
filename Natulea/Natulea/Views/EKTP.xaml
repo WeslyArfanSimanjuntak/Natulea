@@ -14,11 +14,9 @@
 
     <ContentPage.Content>
         <StackLayout Spacing="20" Padding="15">
-            <Label Text="NIK" FontSize="Medium" />
-
             <Entry x:Name="EntryNIK" Text="{Binding Item.NIK}" d:Text="Insert NIK" FontSize="Medium" />
-
             <Button Text="Submit" Clicked="Submit_Clicked" />
+            <Label Text="NIK" FontSize="Medium" />
             <Label Text="{Binding Item.NAMA_LGKP}" d:Text="Item description" FontSize="Small"/>
             <Label Text="{Binding Item.KAB_NAME}" d:Text="Item description" FontSize="Small"/>
             <Label Text="{Binding Item.NO_RW}" d:Text="Item description" FontSize="Small"/>
